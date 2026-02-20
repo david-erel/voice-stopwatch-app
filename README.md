@@ -10,9 +10,10 @@ Voice Stop Watch solves this by announcing the elapsed or remaining time at regu
 
 ## Screenshots
 
-| Main Screen | Configuration        |
-| ----------- | -------------------- |
-| Main screen | Configuration screen |
+### Main screen
+
+<img src="./assets/screenshot-main.png" alt="Main view" style="width: 50%; height: auto;">
+<img src="./assets/screenshot-config.png" alt="Configuration view" style="width: 50%; height: auto;">
 
 ## Features
 
