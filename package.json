@@ -1,0 +1,33 @@
+{
+  "name": "stopwatch-app",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "restart": "lsof -ti:8081 | xargs kill -9 2>/dev/null; sleep 1; expo start --web",
+    "build:android": "npx expo prebuild --platform android --clean && cd android && ./gradlew assembleRelease",
+    "install:android": "adb install -r android/app/build/outputs/apk/release/app-release.apk",
+    "deploy:android": "npm run build:android && npm run install:android",
+    "clean": "rm -rf android node_modules .expo android/app/build"
+  },
+  "dependencies": {
+    "expo": "~54.0.33",
+    "expo-av": "~16.0.8",
+    "expo-keep-awake": "~15.0.8",
+    "expo-speech": "~14.0.8",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
