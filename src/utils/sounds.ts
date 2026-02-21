@@ -5,12 +5,12 @@ let finalBeepSound: Audio.Sound | null = null;
 
 export async function loadSounds(): Promise<void> {
   const { sound: beep } = await Audio.Sound.createAsync(
-    require('../assets/beep.wav')
+    require('../../assets/beep.wav')
   );
   beepSound = beep;
 
   const { sound: finalBeep } = await Audio.Sound.createAsync(
-    require('../assets/beep-final.wav')
+    require('../../assets/beep-final.wav')
   );
   finalBeepSound = finalBeep;
 }
